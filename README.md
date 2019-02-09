@@ -38,3 +38,7 @@ sub nearestPairs($key,$list);
 ```
 
 Returns a sequence of index => values, one for each element in the $keys variable.
+
+
+## License 
+Artistic-2.0
