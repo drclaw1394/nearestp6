@@ -1,0 +1,6 @@
+{
+    "name" : "Nearest::Nearest",
+    "provides" : {
+        "Nearest::Nearest" : "lib/Nearest/Nearest.pm6"
+    }
+}
