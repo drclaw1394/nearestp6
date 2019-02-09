@@ -1,6 +1,11 @@
 {
+    "perl":"6.c",
     "name" : "Nearest::Nearest",
     "provides" : {
         "Nearest::Nearest" : "lib/Nearest/Nearest.pm6"
-    }
+    },
+    "version" : "0.5.0",
+    "authors" : [ "Ruben Westerberg <drclaw@mac.com>" ],
+    "license" : "Artistic-2.0",
+    "source-url":"git://github.com/drclaw1394/nearestp6.git"
 }
