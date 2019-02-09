@@ -12,7 +12,7 @@ use Nearest::Nearest;
 
 my @l=1,2,3,4;
 
-say nearestPair(@l, 1.2);
+say nearestPair(1.2, @l);
 ```
 
 The closest entry in the list to 1.2 is 1.
@@ -25,7 +25,7 @@ The closest entry in the list to 1.2 is 1.
 - For keys out of range, the start of the end element of the list is returned. Which ever is closest.
 
 
-##Exported subs
+## Exported subs
 
 ```perl6
 sub nearestPair($key,$list,:$start);
