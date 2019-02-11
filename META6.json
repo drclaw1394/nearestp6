@@ -1,6 +1,7 @@
 {
     "perl":"6.c",
     "name" : "Nearest::Nearest",
+    "description":"Finds nearest item/index in a sorted list for a given key",
     "provides" : {
         "Nearest::Nearest" : "lib/Nearest/Nearest.pm6"
     },
