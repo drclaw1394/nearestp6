@@ -4,9 +4,9 @@ unit module Nearest;
 #|index => value
 #|
 sub nearestPair ($key, $list,:$start) is export {
-	my int $lower=$start.defined??$start!!0;
-	my int $upper=$list.elems-1; say $upper;
-	my int $mid=($upper+$lower) div 2;
+	my int $lower=0;
+	my int $upper=$list.elems-1; #say $upper;
+	my int $mid= $start.defined??$start!!  ($upper+$lower) div 2;
 	my $result;
 	if $key < $list[0] {
 		#out of range. return the start of the list
@@ -24,13 +24,18 @@ sub nearestPair ($key, $list,:$start) is export {
 			if $previousMid == $mid {
 				#fidn the closes neighbour
 				my $a=($key - $list[$mid]).abs;
-				my $b=($key -$list[$mid+1]).abs;
+				my $limit=$mid+1;
+				if $limit >= $list.elems {
+					$limit= $list.elems-1;
+				}
+				my $b=($key - $list[$limit]).abs;
+
 				if $a < $b {
 
 					$result= $mid=>$list[$mid];
 				}
 				else {
-					$result= $mid+1=>$list[$mid+1];
+					$result= $limit=>$list[$limit];
 				}
 				last;
 			}
