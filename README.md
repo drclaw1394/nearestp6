@@ -1,14 +1,14 @@
-# Nearest::Nearest
+# Numeric::Nearest
 
-A simple module to find the nearest element in a ordered list. Fill the gap between hashes and using grep.
+A simple module to find the nearest element in a ordered list without processing all elements.
 
-the grep sub will process all elements in a list, which is slow when you have an ordered list of numbers.
+The grep sub will process all elements in a list, which is slow when you have an ordered list of numbers.
 
 Hashes only work for keys matching exaclty. 
 
 ## Example
 ```perl6
-use Nearest::Nearest;
+use Numeric::Nearest;
 
 my @l=1,2,3,4;
 
